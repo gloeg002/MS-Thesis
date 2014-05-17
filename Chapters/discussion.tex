@@ -1,0 +1,138 @@
+%==============================================================================
+% discussion.tex : DISCUSS THE IMPLICATION OF EACH RESULT 
+%==============================================================================
+\chapter{Discussion}
+\label{chapter_discussion}
+%------------------------------------------------------------------------------
+ \section{Modeling}
+ 
+Accurately modeling near-inertial waves is difficult for a few reasons. The energy input to the model is highly
+dependent on the type of forcing used. Ideal forcing for half an inertial period is efficient at putting inertial energy into
+the system, however, ideal forcing puts little energy in above or below the Coriolis frequency. When spatially varying
+forcing is used the energy input below the Coriolis frequency agrees well with observational data. However, the energy
+deviates above the Coriolis frequency. The modeled inertial energy is also dependent on the initial phase of the currents before an
+inertial event. 
+
+
+In order to better understand the relationship between inertial energy and the duration of forcing a spectrum of
+model runs were done were done using a spatially uniform top-hat wind stress. The duration of the forcing varied from 
+1 hour up to 17 hours (approximately 1 inertial period). For each model run the magnitude of the wind stress was 
+a constant 0.1$Nm^{-2}$. When each model run was completed a rotary spectrum was applied to the first 256 hours of 
+output after the forcing had stopped. The inertial energy was defined as the peak in the clockwise spectrum at
+the inertial frequency. The inertial energy as a function of the duration of forcing is shown in Figure ~\ref{Inertial Energy vs. Stress Duration} 
+ for three  points in the flat-bottom square basin.  
+ 
+% -- ENERGY VS DURATION
+\FIGURE{4.5}{energy_vs_duration.pdf}{Inertial Energy vs. Stress Duration}{This shows the peak in clockwise rotary spectral at the
+Coriolis frequency for various wind stresses.}
+This plot shows that when the most inertial energy is put into the system when the duration of forcing is half an inertial period and quelled when the duration of one inertial period. 
+The distribution of energy follows a $\sin^2(\pi t)$ curve. This curve can be interpreted as the square of the inertial velocity divided by the  Coriolis frequency. 
+When the wind stress is applied to the surface the current vector will be pointing in the direction of the wind stress and  
+will start to veer clockwise in the northern hemisphere (counterclockwise in the southern hemisphere). After half an inertial period the direction
+of the current will be 180$^{\circ}$ out of phase with the wind stress. In order for the wind stress to stop work needs to be done in the opposite direction
+of the stress. This work required to stop the wind stress increases the kinetic energy of the currents. When the stress 
+is stopped after one inertial period then work is being done against the current and kinetic energy is removed. 
+This ideal is represented nicely with simple box model of the following set of equations : 
+
+\begin{align}
+	\frac{du}{dt} &= fv+\frac{\tau}{\rho}\\
+	\frac{dv}{dt} &= fu
+\end{align}
+Where $u$ and $v$ are the zonal and meridional components of the current, $\tau$ is the wind stress, $\rho$ is the density of water, and $f$ is the Coriolis frequency. 
+Figure  ~\ref{Inertial Box Model} shows the results of the box model. When the wind stress stops after half an inertial period the amplitude of the currents are doubled. 
+
+% -- BOX MODEL
+\FIGURE{4.5}{inertial_box_model.pdf}{Inertial Box Model}{Box model showing the zonal and meridional components when A) the wind
+stress is half an inertial period and B) when the wind stress is one inertial period.}
+
+The energy input at various frequencies is highly dependent on type of forcing used.  Figure ~\ref{Rotary Spectrum Comparison} shows a
+comparison between spectra of surface currents at the western mooring site using ideal forcing, spatially varying forcing, and observational data. 
+The ideal forcing was a top-hat wind stress with a magnitude of 0.1$Nm^{-2}$ and a duration of 8 hours (half the inertial period). The spatially varying forcing
+was derived from NARR wind velocities. Both forcing types agree well with observational data near the Coriolis frequency. At frequencies less than the
+Coriolis frequency the spatially varying forcing agrees quit well with observations but the ideal forcing is about four orders of magnitude lower. At frequencies
+greater than the Coriolis frequency the spatially varying forcing deviates by about one order of magnitude and the ideal forcing deviates by about four orders 
+of magnitude. The high energies outside the Coriolis frequency in the observations are presumably from wind forced frequencies. This explains the reduced
+energy in the ideal forcing and explains why the energy is amplified at the seiche frequencies. The seiche frequencies are standing waves in a basin that persist
+without wind. 
+
+ % -- SPECTRUMS IDEAL AND RED
+\FIGURE{4.5}{spectrums_ideal_and_real.pdf}{Rotary Spectrum Comparison}{A comparison of spectrums from observation at the WM, 
+forcing derived from NARR wind speeds, and ideal forcing.}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% NEAR INERTIAL ENERGY
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Near-Inertial Energy}
+
+Near-inertial energy has large spatial and temporal variations in Lake Superior. Figure ~\ref{Core Moorings Wavelet} shows ADCP observations from the core moorings
+for periods in 2009, 2010, and 2011. Large spatial variability in the near-inertial energy is observed during each period. An event July 24, 2011 put a large amount of 
+inertial energy into the currents at the western mooring, but much weaker energy at the central and eastern mooring. However, there are events that appear weakly coherent
+at each location. An event on August 18, 2009 put a noticeable amount of energy in the system at all stations. However, the magnitude of the event varied at each location. 
+
+\RED{Understand how coherence works and do a coherence analysis between all possible combinations of sites. You have a coherence test in MATLAB but it appears
+to be dependent on the window width and window type. Do not know what to make of this. }
+
+%----------------------------------------------------
+% WIND FIELD
+%----------------------------------------------------
+\subsection{Wind Field}
+Surface wind stress can put energy into NIWs as well as take energy away. One can not ascertain whether energy will be put into NIWs simply
+by looking at a time series of wind stress. In order for the wind stress to increase the kinetic energy of the current the wind needs to be doing positive work on the currents. 
+In other words, there must be a component of the stress in the direction of the current. Because of this relationship between the current direction, wind stress, and energy input sometimes 
+the modeled period does not coincide with observational data. For instance, an event July 24 2011 at the western mooring put a large amount of energy into the system, 
+figure ~\ref{Core Moorings Wavelet}, while the modeled data showed energy decreased during this time. A comparison between the observed and modeled current at the western mooring
+is shown in figure ~\ref{Observational/ Modeled 5m Wavelet}. The discrepancy arises since there is phase difference between the modeled current and the observed current. 
+Inertial events prior to the onset of stratification caused the currents in the observations and model to become out of phase. This is clear by looking at the zonal component, 
+figure ~\ref{Zonal Current Comparison}, and meridional component, figure ~\ref{Meridional Current Comparison}, during this event. On July 23rd, before the inertial event, the phase 
+difference between the observations and model output are close to 180$^{\circ}$, which means the effect of the wind event will have the opposite effect in the model as it does 
+in observations. In order to accurately model near-inertial waves the initial phase needs to be correct.
+
+% -- CONTRADICTORY ZONAL INERTIAL EVENTS
+\FIGURE{4}{model_compare_zonal.pdf}{Zonal Current Comparison}{Comparison between observed and modeled zonal currents during an observed
+inertial event.}
+
+% -- CONTRADICTORY MERIDIONAL INERTIAL EVENTS
+\FIGURE{4}{model_compare_meridional.pdf}{Meridional Current Comparison}{Comparison between observed and modeled Meridional currents during an observed
+inertial event.}
+
+However, defining the time frame of the inertial event is difficult, even when you compare the wind stress vector to the surface current vector, 
+figure ~\ref{Compare Wind Stress and Surface Current}. During this week the wind stress will predominately be in one direction for an extended period of time and if
+there is no phase lag between the wind stress and current vector then the wind stress will put energy after after half an inertial period and take some energy away during the 
+next half inertial period and this process will repeat until the wind stress changes direction or stops. 
+
+% -- CONTRADICTORY MERIDIONAL INERTIAL EVENTS
+\FIGURE{4}{model_compare_current_vectors.pdf}{Compare Wind Stress and Surface Current}{Comparison between observed and modeled wind stress and surface current vector. 
+The top two panels show observations of surface stress and surface currents at the western mooring site. The bottom two panels show modeled output of surface stress and
+current vectors at the western mooring site.}
+
+\RED{Run a model where you remove 8 hours before the inertial event and see you get the opposite result. }
+
+%----------------------------------------------------
+% BATHYMETRY
+%----------------------------------------------------
+%\subsection{Bathymetry}
+%Discussion of bathymetric effects on spatial distribution 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% WAVE CLIMATE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Wave Climate}
+
+The wavelength and direction of propagation of NIWs were estimated following the same procedure as \citet{austin_2013}. \citet{austin_2013} estimated the
+wavelength of NIWs to be between 30 km and 60 km during a large event at the end of July 2010.  A large inertial event also occurred near the end of July 2011. The calculated
+wavelength during this period was calculated to be around 60 km, figure ~\ref{Wave Climate : Realistic Bathymetry}. 
+However, for most of the modeled period the wavelength of above 100 km. The modeled period also shows a slow
+counter-clockwise rotation with a period of about 30 days in the NIWs direction of propagation at all the mooring sites , figure ~\ref{Wave Climate : Realistic Bathymetry}. 
+ \citet{austin_2013}  calculated the same result and noted that this period is on the same order as the lowest order internal Kelvin wave. 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% FUTURE WORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Future Work}
+It is unclear whether large near-inertial events can be predicted with any real accuracy. A more realistic model would be needed in order to make predictions. 
+The models presented in this thesis did not include radiative forcing so the thermocline can not evolve with time. The response of the
+bottom nephoid layer is another important area of research. NIWs have been correlated with the thickness in the bottom nephoid layer \citep{hawley_2004}, however, this 
+needs to be studied further. A physical model including sediment could be used to study the response of NIWs to various scenarios. 
+
+
+%===============================================================================

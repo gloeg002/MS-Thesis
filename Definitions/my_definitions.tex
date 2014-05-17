@@ -1,0 +1,60 @@
+%------------------------------------------------------------------------------- 
+% Custom definitions
+%------------------------------------------------------------------------------- 
+
+% -- LUKES COMMMANDS ----------------------------------------------------------
+\newcommand{\dt}[1]{ \frac{d #1}{dt} } 
+\newcommand{\dx}[1]{ \frac{d #1}{dx} }
+\newcommand{\dy}[1]{ \frac{d #1}{dy} }
+\newcommand{\dz}[1]{ \frac{d #1}{dz} }
+\newcommand{\dtp}[1]{\frac{\partial #1}{\partial t}}
+
+
+% -- A COMPACT FIGURE PLACEMENT COMMAND
+% \FIGURE{size}{directory}{caption}{label}
+% changed : \caption{#3} to \caption[#3]{#4}
+
+\newcommand{\FIGURE}[4]{
+%\begin{minipage}{\linewidth}
+\begin{figure}[H]
+	\centering
+	\includegraphics[height=#1 in]{Figures/#2}
+	\caption[#3]{ {\bf #3.} #4}
+	\label{#3}
+\end{figure}
+%\end{minipage}
+}
+
+% -- MAKE RED TEXT TO EMPHASIZE COMMENTS AND 
+%	THINGS TO FIX
+\newcommand{\RED}[1]{\textcolor{red}{#1}}
+% -----------------------------------------------------------------------------
+\newcommand{\C}{{\mathrm{c}}}
+
+\newcommand{\COS}[1]{{\mathrm{cos}}(#1)}
+\newcommand{\SIN}[1]{{\mathrm{sin}}(#1)}
+\newcommand{\DOF}{{\mathrm{dof}}}
+\newcommand{\MSEC}{\mu{\mathrm{s}}}
+\newcommand{\NS}{\mathrm{ns}}
+\newcommand{\PPM}{{\mathrm{ppm}}}
+\newcommand{\ENR}{{\mathrm{GeV}}}
+\newcommand{\MOM}{{\mathrm{GeV/c}}}
+
+\newcommand{\CONT}{\noindent}
+\newcommand{\FIG}{Fig.\ }
+\newcommand{\FIGS}{Figs.\ }
+\newcommand{\SEC}{Sec.\ }
+\newcommand{\SECS}{Secs.\ }
+\newcommand{\TAB}{Table }
+\newcommand{\TABS}{Tables }
+\newcommand{\EQ}{Eq.\ }
+\newcommand{\EQS}{Eqs.\ }
+\newcommand{\APP}{Appendix }
+\newcommand{\APPS}{Appendices }
+\newcommand{\CHP}{Chapter }
+\newcommand{\CHPS}{Chapters }
+
+\newcommand{\OFF}{\emph{G2off}~}
+\newcommand{\TOO}{\emph{G2Too}~}
+
+

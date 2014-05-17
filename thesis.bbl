@@ -1,0 +1,206 @@
+\begin{thebibliography}{33}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Ahmed et~al.(2013)Ahmed, Troy, and Hawley]{ahmed2013spatial}
+Sultan Ahmed, Cary~D Troy, and Nathan Hawley.
+\newblock Spatial structure of internal poincar{\'e} waves in lake michigan.
+\newblock \emph{Environmental Fluid Mechanics}, pages 1--21, 2013.
+
+\bibitem[Antenucci and Imberger(2001)]{antenucci2001energetics}
+J.P Antenucci and J.~Imberger.
+\newblock Energetics of long internal gravity waves in large lakes.
+\newblock \emph{Limnol. Oceanogr.}, 46(7):\penalty0 1760:1773, 2001.
+
+\bibitem[Austin(2013)]{austin_2013}
+J.A Austin.
+\newblock Observations of near-inertial energy in lake superior.
+\newblock \emph{Limnol. Oceanogr.}, 58(2):\penalty0 715--728, 2013.
+\newblock doi:10.4319/lo.2013.58.2.0715.
+
+\bibitem[Barbiero and Tuchman(2004)]{barbiero_2004}
+Richard~P Barbiero and Marc~L Tuchman.
+\newblock The deep chlorophyll maximum in lake superior.
+\newblock \emph{Journal of Great Lakes Research}, 30:\penalty0 256--268, 2004.
+
+\bibitem[Bennett(1978)]{bennett_1978}
+J.~R. Bennett.
+\newblock Characteristics of the thermal regime of lake superior.
+\newblock \emph{J. Great Lakes. Res.}, 4(3-4):\penalty0 310:319, 1978.
+
+\bibitem[Blanton(1974)]{blanton_1974}
+JO~Blanton.
+\newblock Some characteristics of nearshore currents along the north shore of
+  lake ontario.
+\newblock \emph{Journal of Physical Oceanography}, 4\penalty0 (3):\penalty0
+  415--424, 1974.
+
+\bibitem[Boyce and Chiocchio(1987)]{boyce_etal_1987}
+F.~M. Boyce and F.~Chiocchio.
+\newblock Inertial frequency current oscillations in the central basin of lake
+  erie.
+\newblock \emph{J. Great Lakes. Res.}, 13(4):\penalty0 542--558, 1987.
+
+\bibitem[Boyce et~al.(1989)Boyce, Donelan, Hamblin, Murthy, and
+  Simons]{boyce1989thermal}
+FM~Boyce, MA~Donelan, PF~Hamblin, CR~Murthy, and TJ~Simons.
+\newblock Thermal structure and circulation in the great lakes.
+\newblock \emph{Atmosphere-ocean}, 27\penalty0 (4):\penalty0 607--642, 1989.
+
+\bibitem[Bugnon and Whitehouse(1991)]{bugnon_1991}
+FJ~Bugnon and IA~Whitehouse.
+\newblock Acoustic doppler current meter.
+\newblock \emph{Oceanic Engineering, IEEE Journal of}, 16\penalty0
+  (4):\penalty0 420--426, 1991.
+
+\bibitem[Chen and Millero(1986)]{chen_millero_1986}
+C-TA Chen and Frank~J Millero.
+\newblock Precise thermodynamic properties for natural waters covering only the
+  limnological range.
+\newblock \emph{Limnology and Oceanography}, 31\penalty0 (3):\penalty0
+  657--662, 1986.
+
+\bibitem[Choi et~al.(2012)Choi, Troy, Hsieh, Hawley, and McCormick]{choi_2012}
+Jun Choi, Cary~D Troy, Tsung-Chan Hsieh, Nathan Hawley, and Michael~J
+  McCormick.
+\newblock A year of internal poincar{\'e} waves in southern lake michigan.
+\newblock \emph{Journal of Geophysical Research: Oceans (1978--2012)},
+  117\penalty0 (C7), 2012.
+
+\bibitem[Cullen(1982)]{cullen1982deep}
+John~J Cullen.
+\newblock The deep chlorophyll maximum: comparing vertical profiles of
+  chlorophyll a.
+\newblock \emph{Canadian Journal of Fisheries and Aquatic Sciences},
+  39\penalty0 (5):\penalty0 791--803, 1982.
+
+\bibitem[Ekman(1904)]{ekman1904dead}
+VW~Ekman.
+\newblock On dead-water. norw. n. polar exped. 1893-1896: Sci. results.
+\newblock \emph{Christiania XV}, 1904.
+
+\bibitem[Fairall et~al.(1996)Fairall, Bradley, Rogers, Edson, and
+  Young]{fairall1996bulk}
+Chris~W Fairall, Edward~F Bradley, David~P Rogers, James~Bearer Edson, and
+  George~S Young.
+\newblock Bulk parameterization of air-sea fluxes for tropical ocean-global
+  atmosphere coupled-ocean atmosphere response experiment.
+\newblock \emph{Journal of Geophysical Research}, 101\penalty0 (C2):\penalty0
+  3747--3764, 1996.
+
+\bibitem[Glover et~al.(2011)Glover, Jenkins, and
+  Doney]{glover_modeling_methods}
+David~M Glover, William~J Jenkins, and Scott~C Doney.
+\newblock \emph{Modeling methods for marine science}.
+\newblock Cambridge University Press, 2011.
+
+\bibitem[G{\'o}mez-Giraldo et~al.(2006)G{\'o}mez-Giraldo, Imberger, and
+  Antenucci]{gomez_2006}
+Andr{\'e}s G{\'o}mez-Giraldo, J{\"o}rg Imberger, and Jason~P Antenucci.
+\newblock Spatial structure of the dominant basin-scale internal waves in lake
+  kinneret.
+\newblock \emph{Limnology and oceanography}, 51\penalty0 (1):\penalty0 229,
+  2006.
+
+\bibitem[Haury et~al.(1979)Haury, Briscoe, and Orr]{haury1979tidally}
+Loren~R Haury, Melbourne~G Briscoe, and Marshall~H Orr.
+\newblock Tidally generated internal wave packets in massachusetts bay.
+\newblock 1979.
+
+\bibitem[Haury et~al.(1983)Haury, Wiebe, Orr, and Briscoe]{haury1983tidally}
+Loren~R Haury, Peter~H Wiebe, Marshall~H Orr, and Melbourne~G Briscoe.
+\newblock Tidally generated high-frequency internal wave packets and their
+  effects on plankton in massachusetts bay.
+\newblock \emph{Journal of Marine Research}, 41\penalty0 (1):\penalty0 65--112,
+  1983.
+
+\bibitem[Hawley(2004)]{hawley_2004}
+N.~Hawley.
+\newblock Response of the benthic nepheloid layer to near-inertial internal
+  waves in southern lake michigan.
+\newblock \emph{J. Geophys. Res.}, 109:\penalty0 C04007, 2004.
+\newblock doi:10.1029/2003JC002128.
+
+\bibitem[Kundu and Cohen(2008)]{kundu_cohen}
+PK~Kundu and IM~Cohen.
+\newblock Fluid mechanics. fourth edition, 2008.
+
+\bibitem[Marmorino(1978)]{marmorino_1978}
+George~O Marmorino.
+\newblock Inertial current in lake ontario, winter 1972-73 (ifygl).
+\newblock \emph{Journal of Physical Oceanography}, 8\penalty0 (6):\penalty0
+  1104--1120, 1978.
+
+\bibitem[McCulloch(1973)]{ifygl}
+James McCulloch.
+\newblock The international field year for the great lakes.
+\newblock \emph{Hydrological Sciences Journal}, 18\penalty0 (3):\penalty0
+  367--373, 1973.
+
+\bibitem[Mortimer(1974)]{mortimer_1974}
+Clifford~Hiley Mortimer.
+\newblock Lake hydrodynamics.
+\newblock 1974.
+
+\bibitem[Pickett and Richards(1975)]{pickett_1975}
+RL~Pickett and FP~Richards.
+\newblock Lake ontario mean temperatures and currents in july 1972.
+\newblock \emph{Journal of Physical Oceanography}, 5\penalty0 (4):\penalty0
+  775--781, 1975.
+
+\bibitem[Pollard(1970)]{pollard_1969}
+R.~T. Pollard.
+\newblock On the generation by winds of inertial waves in the ocean.
+\newblock \emph{Deep-Sea Res.}, 17:\penalty0 795--812, 1970.
+
+\bibitem[Pollard and Millard~Jr.(1970)]{pollard_1970}
+R.~T. Pollard and R.~C. Millard~Jr.
+\newblock Comparison between observed and simulated wind-generated inertial
+  oscillations.
+\newblock \emph{Deep-Sea Res.}, 17:\penalty0 813--821, 1970.
+
+\bibitem[Qi et~al.(1995)Qi, De~Szoeke, Paulson, and Eriksen]{hongbo_et_al_1995}
+Hongbo Qi, Roland~A De~Szoeke, Clayton~A Paulson, and Charles~C Eriksen.
+\newblock The structure of near-inertial waves during ocean storms.
+\newblock \emph{Journal of Physical Oceanography}, 25\penalty0 (11):\penalty0
+  2853--2871, 1995.
+
+\bibitem[Rueda et~al.(2003)Rueda, Schladow, and P{\'a}lmarsson]{rueda_2003}
+Francisco~J Rueda, S~Geoffrey Schladow, and Sveinn~{\'O} P{\'a}lmarsson.
+\newblock Basin-scale internal wave dynamics during a winter cooling period in
+  a large lake.
+\newblock \emph{Journal of Geophysical Research: Oceans (1978--2012)},
+  108\penalty0 (C3), 2003.
+
+\bibitem[Schwab(1977)]{schwab_1977}
+David~J Schwab.
+\newblock Internal free oscillations in lake ontario.
+\newblock \emph{Limnol. Oceanogr}, 22\penalty0 (4):\penalty0 700--708, 1977.
+
+\bibitem[Schwab and Sellers(1996)]{schwab1996computerized}
+David~J Schwab and Diana~L Sellers.
+\newblock \emph{Computerized bathymetry and shorelines of the Great Lakes}.
+\newblock National Oceanographic and Atmospheric Administration, US Department
+  of Commerce, Great Lakes Environmental Research Laboratory, 1996.
+
+\bibitem[Sloss and Saylor(1976)]{sloss_1976}
+Peter~W Sloss and James~H Saylor.
+\newblock Large-scale current measurements in lake huron.
+\newblock \emph{Journal of Geophysical Research}, 81\penalty0 (18):\penalty0
+  3069--3078, 1976.
+
+\bibitem[Thomas and Dell(1978)]{thomas_etal_1978}
+RL~Thomas and CI~Dell.
+\newblock Sediments of lake superior.
+\newblock \emph{Journal of Great Lakes Research}, 4\penalty0 (3):\penalty0
+  264--275, 1978.
+
+\bibitem[Titze(2013)]{titze_thesis}
+Daniel~James Titze.
+\newblock Observations of the winter thermal structure of lake superior.
+\newblock Master's thesis, University of Minnesota, 2013.
+
+\end{thebibliography}

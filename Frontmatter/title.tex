@@ -1,0 +1,47 @@
+%==============================================================================
+%       title.tex -- SET UP THE BEGINNING OF THE THESIS
+%==============================================================================
+%       For a  PhD give the command \phd. Default is masters
+%       \degree   %(normally Doctor of Philosophy or Master of Science)
+%       \initials    %(normally Ph.D. or M.S.)
+
+% -- MASTERS / PHD  / DRAFT
+           \ms          	% use if for a Master of Science thesis
+%       \phd        	% use if for a Ph.D. dissertation
+%       \draft       	% use if this is just a draft
+
+% -- TITLE / AUTHOR INFORMATION / DEGREE TITLE
+\title{\bf Spatial Distribution and Temporal Evolution of Near-Inertial Waves in Lake Superior}
+\author{Lucas J Gloege}
+\campus{University of Minnesota} 
+\program{Water Resources Science} 
+\degree{MASTER OF SCIENCE}
+\director{Advisor : Jay Austin} 
+
+% -- SUBMISSION MONTH AND YEAR
+\submissionmonth{June} 
+\submissionyear{2014} 
+
+% INCLUSION OF ABSTRACT / COPYRIGHT / ACKNOWLEDGMENT / DEDICATION
+\abstract{\input{./Frontmatter/abstract}}
+\words{331}         % number of words in the abstract
+\copyrightpage   % Do you want copyright protection?
+\acknowledgements{\input{./Frontmatter/acknowledge}}
+%\dedication{\input{./Frontmatter/dedication}}
+
+% -- INCLUSION OF SPECIAL PREFACE
+%\extra{\input{preface}}
+
+% The \beforepreface command actually causes insertion of the title, 
+% abstract, signature, and copyright pages into the new document.
+ \beforepreface 
+
+% -- DEFINE TEXT TO GO BEFORE TABLE OF CONTENTS
+\figurespage
+\tablespage
+
+% The \afterpreface command actually causes insertion of the
+% contents, list of figures, etc. into the new document.
+\afterpreface            
+
+%==================================================================================

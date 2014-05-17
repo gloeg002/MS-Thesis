@@ -1,0 +1,267 @@
+%============================================================================
+% results.tex : GO THROUGH EACH MODEL AND TALK ABOUT OBSERVATIONS
+%============================================================================
+\chapter{Results}
+\label{current_results_chapter}
+%-----------------------------------------------------------------------------
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% MODELING RESULTS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Modeling}
+A hierarchy of models were used to explore the effects of wind duration, curl in the wind field, and bathymetry on 
+the spatial distribution of near-inertial energy. Three basins were considered, an ideal flat bottom basin, a flat bottom basin with 
+Lake Superior coastline, and a Lake Superior coastline with realistic bathymetry. Two thermal structures were explored, a homogenous
+thermal structure of 4$^{\circ}$C and a two layer structure. Three types of forcing were used, a spatially uniform top-hat wind stress , 
+a spatially uniform rotating wind stress,  and spatially/temporally varying wind stress derived from NARR wind speeds. 
+
+
+%------------------------------------------------------------------------------
+%    IDEAL MODEL
+%------------------------------------------------------------------------------
+\subsection{Ideal Basin : Closed Boundaries}
+The ideal model was a 200km by 200km square basin with a uniform depth of 165 m. The model was forced with a spatially
+uniform top-hat wind stress with a magnitude of 0.1 $N m^{-2}$. The thermal structure was a two layer system with the thermocline depth 
+set to 20 m, the top layer 21$^{\circ}C$, and the bottom layer 4$^{\circ}C$. 
+
+
+The temperature contour for the ideal model is given below. Notice that the thermocline starts to oscillate after an internal wave has 
+propagated 100 km. 
+
+% -- TEMPERATURE CONTOUR
+\FIGURE{2}{ideal_temp.pdf}{Temperature Contour}{Temperature contour at the center of the ideal basin. The black dotted line
+is at 8 hours, the time forcing stops. The white dotted line is the time it takes an internal wave to propagate 100km, this was computed after the
+forcing had stopped. The x-axis is in units of inertial periods, where the inertial period if about 16 hours.}
+
+In order for undulations of the thermocline to begin surface must subside and push down the thermocline. This can happen at the coast 
+where there is a boundary or when surface waves moving in opposite directions meet. The above plot shows that undulations of the thermocline
+at the center of the ideal model are not "felt" until the wave stating at the coast has reached that point. The times it takes
+this wave to reach this point is given by dividing the distance from  by the internal wave speed ($t=\frac{d}{c_{int}}$). The white
+line in the plot shows this time after the surface stress has ceased. This time corresponds to when undulations begin. 
+This suggests that a coast is necessary for thermocline undulations to persist. 
+
+The velocity contour at the center of the ideal basin is provided below. 
+
+% -- CURRENT CONTOUR
+\FIGURE{3}{ideal_current.pdf}{Current Contour}{Current contour at the center of the ideal basin. The black dotted line
+is at 8 hours, the time forcing stops. The white dotted line is the time it takes an internal wave to propagate 100km, this was computed after the
+forcing had stopped. The x-axis is in units of inertial periods, where the inertial period if about 16 hours.}
+
+This shows a back and forth motion of the zonal and meridional velocity components. The current vector moves in clockwise fashion from north, to west, to south, to east
+in approximately one Coriolis period. High currents are observed above the thermocline with weaker currents below. The clockwise and counter-clockwise wavelet 
+
+% -- WAVELET CONTOUR
+\FIGURE{3}{ideal_wavelet.pdf}{Wavelet Contour}{Contour plot of clockwise and counter-clockwise wavelet amplitude at the center of the basin. 
+The black dotted line
+is at 8 hours, the time forcing stops. The white dotted line is the time it takes an internal wave to propagate 100km, this was computed after the
+forcing had stopped. The x-axis is in units of inertial periods, where the inertial period if about 16 hours.}
+
+Spectral of surface currents, thermocline undulations, and the 18 m depth temperature are provided below. The surface currents show a significant amount of energy at
+the inertial frequency. Thermocline undulations and 18 m temperature show substantial energy in the super-inertial range. Interestingly, the peak in the thermocline spectrum
+and 18 m spectrum is shifted more into the super-inertial range than the peak in the surface current spectrum. 
+
+% -- SPECTRUMS
+\FIGURE{3}{ideal_spectrums.pdf}{Ideal Spectrums}{Spectrums from surface currents, thermocline undulations, and 18 m temperature. The black dotted  line is  at the inertial frequency.}
+
+Snapshots of the surface energy are provided below. The energy decreases at the coast and after about 150 hours most of the energy stay concentrated near the center of the basin. 
+
+% -- SURFACE ENERGY
+\FIGURE{4.5}{ideal_surface_energy_snapshots.pdf}{Ideal Surface Energy}{Snapshots of surface energy in ideal basin.}
+
+%------------------------------------------------------------------------------
+%    PERIODIC MODEL
+%------------------------------------------------------------------------------
+\subsection{Ideal Basin : Periodic Boundaries}
+
+A model with doubly periodic boundary conditions was ran. This model was useful to show
+that a coastline is necessary to start thermocline undulations. A contour plot of the temperature at
+the center of the basin is shown below. 
+
+% -- TEMPERATURE CONTOUR
+\FIGURE{2}{periodic_temp.pdf}{Periodic Temperature Contour}{Temperature contour at the center of the ideal basin with periodic boundaries. The black dotted line
+is at 8 hours, the time forcing stops. The white dotted line is the time it takes an internal wave to propagate 100km, this was computed after the
+forcing had stopped. The x-axis is in units of inertial periods, where the inertial period if about 16 hours.}
+
+The current contour at the center of the model is provided below. Notice that there are high currents in the top mixed layer and no motion below the thermocline. The top
+layer shows pure inertial motion with the current vector rotating clockwise at the inertial frequency. 
+
+% -- VELOCITY CONTOUR
+\FIGURE{3}{periodic_current.pdf}{Periodic Current Contour}{Current contour at center of ideal basin with periodic boundaries. The black dotted line
+is at 8 hours, the time forcing stops. The white dotted line is the time it takes an internal wave to propagate 100km, this was computed after the
+forcing had stopped. The x-axis is in units of inertial periods, where the inertial period if about 16 hours.}
+
+Spectral of surface currents, thermocline undulations, and the 18 m depth temperature are provided below. Notice there is no energy in the thermocline undulations
+and the peak in the current spectrum is centered at the inertial frequency. This is indicative of pure inertial motion, in other words all the inertial energy is kinetic energy. 
+
+% -- SPECTRUMS
+\FIGURE{3}{periodic_spectrums.pdf}{Periodic Spectrum}{Spectrums from surface currents, thermocline undulations, and 18 m temperature. The black dotted  line is  at the inertial frequency.}
+
+
+%------------------------------------------------------------------------------
+%   LAKE SUPERIOR : FLAT BOTTOM
+%------------------------------------------------------------------------------
+\subsection{Lake Superior : Flat Bottom}
+
+The flat bottom Lake Superior model was configured using 5km x 5km spatial resolution and a uniform depth of 165 m. 
+The forcing used was a top-hat wind stress lasting for half an inertial period. 
+To estimate the inertial energy across the basin a rotary spectrum was applied to the surface currents and the peak in the
+clockwise rotary spectrum at the inertial was used as an estimate for the inertial energy. The analysis shows
+high energy in the open lake and decreasing energy near the coast. A plot of the spatial distribution of energy is provided below.
+
+% -- SPECTRAL PEAKS
+\FIGURE{3}{flat_spectral_peaks.pdf}{Spatial Energy - Flat Bottom}{Peak in the clockwise rotary spectrum at the Coriolis frequency.}
+
+
+\RED{To be consistent, re-run this model using 2km x 2km spatial resolution.}
+
+%------------------------------------------------------------------------------
+%   LAKE SUPERIOR : REALISTIC BATHYMETRY
+%------------------------------------------------------------------------------
+\subsection{Lake Superior : Realistic Bathymetry}
+
+The realistic bathymetry was 2km by 2km closed basin and was forced realistic wind stress derived from 
+the 2011 NARR wind field. In order to compare modeled output with observational data stations were
+placed in the model at the approximate location of the core moorings. Below is a plot of the spatial distribution of surface kinetic energy.
+
+% -- ENERGY DISTRIBUTION
+\FIGURE{4}{three_inertial_events.pdf}{Energy distribution: Realistic Bathymetry}{Surface kinetic energy distribution computed using the
+amplitude of clockwise rotary wavelet tuned to the inertial frequency. The cyan points are the core mooring sites. Each column is before and after a local inertial event}
+
+The surface kinetic energy was also calculated using the amplitude at the inertial frequency of the clockwise rotary spectrum. 
+The spatial distribution of the inertial energy is given below. 
+
+% -- PEAK IN ROTARY SPECTRUM
+\FIGURE{2.5}{narr_spectral_peaks.pdf}{Spatial Energy : Realistic Bathymetry}{Peak in the clockwise rotary spectrum at the Coriolis frequency.}
+
+\citet{austin_2013} described a method to calculate the wavelength and wave direction of inertial waves based on the theory of
+a propagating plane wave in a two layer system. Below is a plot of the wavelength and wave direction based on the method described in \citet{austin_2013}. 
+
+% -- WAVE CLIMATE
+\FIGURE{2.5}{wave_climate_narr.pdf}{Wave Climate : Realistic Bathymetry}{Estimated wavelength and wave direction at core mooring 
+locations in the model. Each column is before and after a local inertial event}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% OBSERVATIONS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%------------------------------------------------------------------------------
+%   ADCP OBSERVATIONS
+%------------------------------------------------------------------------------
+\section{ADCP Observations}
+Near-inertial energy at the core mooring sites was quantified using ADCP observations. the complete record of
+upward looking ADCP observations at the core mooring sites is provided below. 
+
+% -- ADCP CORE MOORING
+\FIGURE{4}{ADCP_core.pdf}{Core Mooring ADCP Observations}{Three years worth of ADCP observations at the core mooring sites western
+mooring (WM, central mooring (CM), and eastern mooring (EM).}
+
+There are three periods where observations at all three mooring sites overlap. 
+
+\begin{itemize}
+	\item June, 7 2009 - October, 4 2009  
+ 	\item September, 10 2010  -   December, 1 2010
+	\item June, 18 2011 -  September, 19 2011
+\end{itemize}
+
+These periods allow us to look at spatial variability among the sites for each period but does not permit a proper analysis  of interannual variability. 
+The surface currents were averaged over the top 15 m and the time series was then convoluted with  wavelet tuned to the inertial frequency. 
+A plot the overaged current and wavelet analysis is provided below.
+
+% -- CORE MOORING WAVELET ANALYSIS
+\FIGURE{5}{core_wavelet.pdf}{Core Moorings Wavelet}{This plot shows the amplitude of
+the clockwise rotary wavelet tuned the inertial frequency. The amplitude can be thought of
+as the inertial velocity. This plot shows spatial variability between sites, but can not be used to 
+show anything about inter annual variability.}
+
+The amplitude of the wavelet analysis is indicative of near-inertial currents and hence near-inertial kinetic energy. There appears to be a general
+coherence in near-inertial energy between sites during each period. When near near-inertial energy is high at one station it is relatively high at each other station.
+However, the partition of energy between sites is different for each period. During 2009 the inertial energy is greater at the western mooring while in 2010 there 
+is less near-inertial energy at the western mooring compared to the other two. This suggests that although there appears to be coherence between the sites
+there is substantial spatial variability in the energy. 
+
+
+% -- COMMENTED OUT
+
+\begin{comment}
+The plot below shows coherence in current speeds between sites. 
+% -- COHERENCE CURRENT SPEEDS 2011
+\FIGURE{4}{core2011_current_coherence.pdf}{Core Mooring Coherence}{This shows the coherence in current speeds between mooring sites. The top 
+row shows the magnitude squared coherence and the bottom shows the phase difference between sites at each frequency. The red line is at the Coriolis frequency and the three
+blue lines are first three seiche frequencies.}
+
+There is a statistically significant (greater than 0.5) coherence between the western mooring and central mooring at the inertial frequency, but not between any other two mooring sites. 
+However, when if you look at coherence between zonal components and meridional components you get a different result. You get a statistically significant coherence between eastern
+and central moorings. 
+
+% -- COHERENCE ZONAL SPEEDS 2011
+\FIGURE{4}{core2011_zonal_coherence.pdf}{Core Mooring Zonal Coherence}{This shows coherence in zonal component of current speed. The top 
+row shows the magnitude squared coherence and the bottom shows the phase difference between sites at each frequency. The red line is at the Coriolis frequency and the three
+blue lines are first three seiche frequencies.}
+
+% -- COHERENCE MERID. SPEEDS 2011
+\FIGURE{4}{core2011_merid_coherence.pdf}{Core Mooring Meridional Coherence}{This shows coherence in meridional component of current speed. The top 
+row shows the magnitude squared coherence and the bottom shows the phase difference between sites at each frequency. The red line is at the Coriolis frequency and the three
+blue lines are first three seiche frequencies.}
+\end{comment}
+
+
+%-----------------------------------------------------------------
+% MODEL COMPARISON
+%-----------------------------------------------------------------
+\section{Comparison}
+Points in the Lake Superior NARR forcing model corresponding to the core mooring sites were compared with observations for the same period. Below is 
+a plot comparing current speeds at each site.
+
+% -- Model Comparison
+\FIGURE{4}{model_compare.pdf}{Observational/ Model Comparison}{Comparison between currents speeds at core mooring locations and approximate location in the model. }
+
+% -- WAVELET WM
+\FIGURE{4}{model_compare_wavelet_contour_WM.pdf}{Observational/ Modeled Wavelet Amplitude - WM}{The top plot shows the observed data between July 15, 2011 and 
+September 15, 2011 at the western mooring while the bottom plot shows the modeled data during the same period.}
+
+% -- WAVELET EM
+\FIGURE{4}{model_compare_wavelet_contour_CM.pdf}{Observational/ Modeled Wavelet Amplitude - CM}{The top plot shows the observed data between July 15, 2011 and 
+September 15, 2011 at the central mooring while the bottom plot shows the modeled data during the same period.}
+
+% -- WAVELET EM
+\FIGURE{4}{model_compare_wavelet_contour_EM.pdf}{Observational/ Modeled Wavelet Amplitude - EM}{The top plot shows the observed data between July 15, 2011 and 
+September 15, 2011 at  the eastern mooring while the bottom plot shows the modeled data during the same period.}
+
+
+% -- THIS IS COMMENTED OUT
+\begin{comment}
+
+%------------------------------------------------------------------------------
+%   LOW FREQUECY
+%------------------------------------------------------------------------------
+\subsection{Low Frequency}
+
+A low frequency was observed throughout the data set
+\FIGURE{3}{low_freq.pdf}{Low Frequency Current Fluctuations}{Low frequency current fluctuations were observed intermittentnly.}
+
+\end{comment}
+
+%Present results comparing inertial energy at mooring sites. Are the the sites coherent? Are sites closer 
+%together more coherent than sites with a large separation? What is the cross correlation between sites?
+%Look at the wind field. Can you say when these large events will occur? probably not, we will never get the phase correct. 
+
+% -- THIS IS COMMENTED OUT
+\begin{comment}
+%------------------------------------------------------------------------------
+%   WIND FIELD
+%------------------------------------------------------------------------------
+\subsection{Wind Field}
+
+clockwise rotation in wind field was generally observed. wind goes counter clockwise around low pressure zone. 
+\FIGURE{3}{wind_phase.pdf}{Wind Phase}{Wind phase.}
+
+
+Wind speeds are given below
+
+\FIGURE{3}{wind_speed.pdf}{Wind Speed}{Wind Speed.}
+
+Coherence between wind field and large inertial events? Coherence between wind field and surface currents? 
+\end{comment}
+
+%=================================================================================
